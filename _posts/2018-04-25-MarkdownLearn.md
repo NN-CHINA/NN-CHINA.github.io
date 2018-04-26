@@ -353,12 +353,12 @@ To create an inline link, use a set of regular parentheses immediately after the
 	两种样式中，链接文本都被限制在方括号内。
 	在被方括号括起来链接文本后边紧跟有规律的圆括号，在圆括号中放目标URL，可以放链接可选的标题
 
-This is [Baidu](http://www.baidu.com/ "百度") inline link. 
+`This is [Baidu](http://www.baidu.com/ "百度") inline link. `
 
 Will produce :
 
-<p>This is <a href="http://example.com/" title="百度">
-Baidu</a> inline link.</p>
+`<p>This is <a href="http://example.com/" title="百度">
+Baidu</a> inline link.</p>`
 
 	注：
 	1.链接到本地服务器资源，可以使用引用路径。
@@ -368,14 +368,15 @@ Baidu</a> inline link.</p>
 	
 If you’re referring to a local resource on the same server, you can use relative paths:  
 
-See my [About](/resource/) page for details.   
+	See my [About](/resource/) page for details.   
 
 Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:
 
-This is [an example][id] reference-style link.
+	This is [an example][id] reference-style link.  
+	
 You can optionally use a space to separate the sets of brackets:
 
-This is [an example] [id] reference-style link.
+	This is [an example] [id] reference-style link.
 
 Then, anywhere in the document, you define your link label like this, on a line by itself:
 
@@ -409,52 +410,60 @@ Link definitions are only used for creating links during Markdown processing, an
 
 Link definition names may consist of letters, numbers, spaces, and punctuation — but they are not case sensitive. E.g. these two links:
 
-[link text][a]
-[link text][A]
+[link text][a]  
+
+[link text][A]  
+
 are equivalent.
 
 The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:
 
-[Google][]
+	[Google][]  
+
 And then define the link:
 
-[Google]: http://google.com/
+	[Google]: http://google.com/  
+	
 Because link names may contain spaces, this shortcut even works for multiple words in the link text:
 
-Visit [Daring Fireball][] for more information.
+	Visit [Daring Fireball][] for more information.  
+	
 And then define the link:
 
-[Daring Fireball]: http://daringfireball.net/
+	[Daring Fireball]: http://daringfireball.net/  
+	
 Link definitions can be placed anywhere in your Markdown document. I tend to put them immediately after each paragraph in which they’re used, but if you want, you can put them all at the end of your document, sort of like footnotes.
 
 Here’s an example of reference links in action:
 
-I get 10 times more traffic from [Google] [1] than from
-[Yahoo] [2] or [MSN] [3].
+	I get 10 times more traffic from [Google] [1] than from
+	[Yahoo] [2] or [MSN] [3].
 
-  [1]: http://google.com/        "Google"
-  [2]: http://search.yahoo.com/  "Yahoo Search"
-  [3]: http://search.msn.com/    "MSN Search"
+	[1]: http://google.com/        "Google"
+	[2]: http://search.yahoo.com/  "Yahoo Search"
+	[3]: http://search.msn.com/    "MSN Search"  
+	
 Using the implicit link name shortcut, you could instead write:
 
-I get 10 times more traffic from [Google][] than from
-[Yahoo][] or [MSN][].
-
-  [google]: http://google.com/        "Google"
-  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"
-  [msn]:    http://search.msn.com/    "MSN Search"
+	I get 10 times more traffic from [Google][] than from
+	[Yahoo][] or [MSN][].
+	
+	[google]: http://google.com/        "Google"
+	[yahoo]:  http://search.yahoo.com/  "Yahoo Search"
+	[msn]:    http://search.msn.com/    "MSN Search"
+	
 Both of the above examples will produce the following HTML output:
 
-<p>I get 10 times more traffic from <a href="http://google.com/"
-title="Google">Google</a> than from
-<a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
-or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+	<p>I get 10 times more traffic from <a href="http://google.com/"
+	title="Google">Google</a> than from
+	<a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a>
+	or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
 
 For comparison, here is the same paragraph written using Markdown’s inline link style:  
 
-I get 10 times more traffic from [Google](http://google.com/ "Google")
-than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
-[MSN](http://search.msn.com/ "MSN Search").
+	I get 10 times more traffic from [Google](http://google.com/ "Google")
+	than from [Yahoo](http://search.yahoo.com/ "Yahoo Search") or
+	[MSN](http://search.msn.com/ "MSN Search").
 
 The point of reference-style links is not that they’re easier to write. The point is that with reference-style links, your document source is vastly more readable. Compare the above examples: using reference-style links, the paragraph itself is only 81 characters long; with inline-style links, it’s 176 characters; and as raw HTML, it’s 234 characters. In the raw HTML, there’s more markup than there is text.
 
