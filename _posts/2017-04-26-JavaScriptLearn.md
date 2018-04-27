@@ -1,8 +1,8 @@
 ---
-
-title:JavaScript Learn  
-date:2018-4-26  
+title: JavaScript Learn  
+date: 2018-4-26  
 tags: JavaScript  
+categories: JavaScript
 
 ---
 
@@ -23,4 +23,5 @@ tags: JavaScript
 	new Number(value)   
 	*如果参数无法被转换为数字，则返回 NaN。
 	*在非构造器上下文中 (如：没有 new 操作符)，Number 能被用来执行类型转换。
+
 	
