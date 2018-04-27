@@ -1,3 +1,9 @@
+---
+title: ReactNative学习  
+tags: ReactNative  
+categories: ReactNative
+
+---
 ### 安装
 
 ##### Homebrew
