@@ -1,9 +1,9 @@
-----
-title:React(State and Lifecycle)  
-tags:React  
-categories:React  
+---
+title: React(State and Lifecycle)  
+tags: React  
+categories: React  
 
-----
+---
 
 
 ##### 状态和生命周期(State and Lifecycle)

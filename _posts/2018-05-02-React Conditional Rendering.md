@@ -1,7 +1,7 @@
 ---
-title: Conditional Rendering  
-tag:React  
-categories:React  
+title: React(Conditional Rendering)  
+tag: React  
+categories: React    
 
 ---
 

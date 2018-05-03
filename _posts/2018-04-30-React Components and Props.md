@@ -1,7 +1,7 @@
-----
-title:React(Components and Props)
-categories:React
-tags:React
+---
+title: React(Components and Props)  
+categories: React  
+tags: React  
 
 ---
 

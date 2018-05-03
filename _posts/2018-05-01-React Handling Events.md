@@ -1,7 +1,7 @@
 ---
-title:React（Handling Events）  
-categories：React  
-tags:React  
+title: React（Handling Events）    
+categories: React    
+tags: React    
 
 ---
 
