@@ -118,9 +118,9 @@ index_with_subtitle: false
 menu:
   home: /
   categories: /categories/
-  #about: /about/
   archives: /archives/
-  # tags: /tags/
+  tags: /tags/
+  about: /about/
   # sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -405,7 +405,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8zNjM0NS8xMjg4MA==
 
 # Support for gitalk comments system.
 gitalk:
