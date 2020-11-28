@@ -92,7 +92,7 @@ since: 2018
 authoricon: heart
 
 # Footer `powered-by` and `theme-info` copyright
-copyright: true
+copyright: false
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -405,7 +405,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: MTAyMC8zNjM0NS8xMjg4MA==
+# livere_uid: MTAyMC8zNjM0NS8xMjg4MA==
 
 # Support for gitalk comments system.
 gitalk:
